@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Input Focus Example</title>
+	<script type="text/javascript">
+		function xonfocus(e) {
+			e.style.background = "yellow";
+		}
+
+		function xblur(e) {
+			e.style.background = "white";
+		}
+		function xchange(e){
+			alert("change")
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="name" onfocus="xonfocus(this)" onblur="xblur(this)" onchange="xchange()">
+	<input type="text" onfocus="xonfocus(this)" onblur="xblur(this)">
+</body>
+</html>

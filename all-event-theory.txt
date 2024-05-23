@@ -1,0 +1,14 @@
+onfocus: This event occurs when the input field gains focus. It's commonly used to highlight the input field or provide additional information or tooltips to the user.
+
+onblur: This event occurs when the input field loses focus. It's often used for validation purposes, such as checking if the entered data is correct once the user moves away from the field.
+
+onclick: This event is triggered when the input field is clicked. It can be used to perform an action, such as displaying a message or changing the style of the input field.
+
+ondblclick: This event is triggered when the input field is double-clicked. It can be used to execute specific actions that should only happen on a double-click, such as selecting all text in the input field.
+
+onmousemove: This event occurs when the mouse pointer moves within the input field. It can be used to display dynamic information or update certain elements in real-time as the user moves the mouse.
+
+onmouseleave: This event is triggered when the mouse pointer leaves the input field. It's useful for reverting any changes made on onmousemove or for hiding tooltips and additional information 
+displayed during the mouse hover.
+
+

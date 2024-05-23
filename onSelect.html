@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onSelect</title>
+	<script type="text/javascript">
+		function xselect(text){
+				
+				st=text.selectionStart;
+				end=text.selectionEnd;
+				str=text.value.substring(st,end);
+				document.getElementById('select').innerHTML=str
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" 
+		name=""
+		onselect="xselect(this)" 
+		>
+	</form>
+	selected text
+	<div id="select"></div>
+
+</body>
+</html>

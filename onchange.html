@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function xchange(e){
+			document.getElementById('data').innerHTML=e.value
+		}
+	</script>
+</head>
+<body>
+	<select id="batch" onchange="xchange(this)">
+		<option>JAVA</option>
+		<option>PYTHON</option>
+		<option>Data Science</option>
+		<option>Machine Learning</option>
+
+	</select>
+	<p>Course:<b id="data"></b></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>- onBlur -onfocus</title>
+	<script type="text/javascript">
+		firstBlure=0;
+		secondbox=0;
+		function blurex() {
+			firstBlure++;
+			document.getElementById('fb').innerHTML=firstBlure
+		}
+		function focusx(){
+			secondbox++;
+			document.getElementById('focus').innerHTML=secondbox;
+		}
+	</script>
+</head>
+<body>
+
+	first box <input type="text"id="name" onblur="blurex()"onfocus="focusx()"><br><br>
+	<p>blure <span id="fb"></span><br>focus <span id="focus"></span></p><br>
+	second box <input type="text" name=""><br><br>
+</body>
+</html>

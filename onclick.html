@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>onclick</title>
+	<script type="text/javascript">
+		i=0;
+		function btnclick(){
+			i++
+			document.getElementById('btnclick').innerHTML="BUTTON CLICK [ "+i+" ] TIME "
+		}
+		function btndblclick() {
+			i++
+			document.getElementById('btdblnclick').innerHTML="BUTTON CLICK [ "+i+" ] TIME "
+		}
+	</script>	
+</head>
+<body>
+	<button onclick="btnclick()">click on button</button>
+	<div id="btnclick"></div>
+		<button ondblclick="btndblclick()">double click on button</button>
+	<div id="btdblnclick"></div>
+</body>
+</html>

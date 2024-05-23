@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mouse Event</title>
+</head>
+<body>
+
+	<div
+	 class="f-div"
+	 style="background: red;
+	 height: 10rem; 
+	 width: 10rem;">
+
+	<h3
+	style="text-align: center;
+	padding-top: 4rem;"  onmouseenter="mouseevent(this)"
+	 onmouseleave="mouseleave(this)">hello</h3>
+	</div>
+	<div id="count"></div>
+
+	<script type="text/javascript">
+		let count = 0;
+		function mouseevent(e) {
+			count++;
+			e.style.fontSize = "2rem";
+			e.style.border="2px solid yellow"
+			document.getElementById('count').innerHTML = count;
+		}
+		function mouseleave(e) {
+			e.style.fontSize = "1rem";
+			e.style.color = "black";
+			e.style.border="none"
+		}
+	</script>
+
+</body>
+</html>
