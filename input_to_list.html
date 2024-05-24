@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todo List</title>
+</head>
+<body>
+	<form onsubmit="addData(); return false;">
+		<input type="text" id="listitem" placeholder="Enter list item">
+		<button type="submit">Click</button>
+	</form>
+	<ul id="data">
+		
+	</ul>
+
+	<script type="text/javascript">
+		function addData() {
+			var ul = document.getElementById('data');
+			var li = document.createElement('li');
+			var text = document.getElementById('listitem').value;
+			var value = document.createTextNode(text);
+			li.appendChild(value);
+			ul.appendChild(li);
+			
+			// Clear the input field after adding the item
+			document.getElementById('listitem').value = '';
+		}
+	</script>
+</body>
+</html>
